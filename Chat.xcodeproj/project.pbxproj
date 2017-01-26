@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390C345BCB0EC4A82D05C23C /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B024DCD481BD6B4857E2F0B0 /* Pods_Chat.framework */; };
+		6EEED5EE1E3A16D3003C647F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEED5ED1E3A16D3003C647F /* GoogleService-Info.plist */; };
 		6EFA14E91E3A14AF0010E5EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA14E81E3A14AF0010E5EC /* AppDelegate.swift */; };
 		6EFA14EB1E3A14AF0010E5EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA14EA1E3A14AF0010E5EC /* ViewController.swift */; };
 		6EFA14EE1E3A14AF0010E5EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA14EC1E3A14AF0010E5EC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EEED5ED1E3A16D3003C647F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EFA14E51E3A14AF0010E5EC /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA14E81E3A14AF0010E5EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EFA14EA1E3A14AF0010E5EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				6EFA14EC1E3A14AF0010E5EC /* Main.storyboard */,
 				6EFA14EF1E3A14AF0010E5EC /* Assets.xcassets */,
 				6EFA14F11E3A14AF0010E5EC /* LaunchScreen.storyboard */,
+				6EEED5ED1E3A16D3003C647F /* GoogleService-Info.plist */,
 				6EFA14F41E3A14AF0010E5EC /* Info.plist */,
 			);
 			path = Chat;
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFA14F31E3A14AF0010E5EC /* LaunchScreen.storyboard in Resources */,
+				6EEED5EE1E3A16D3003C647F /* GoogleService-Info.plist in Resources */,
 				6EFA14F01E3A14AF0010E5EC /* Assets.xcassets in Resources */,
 				6EFA14EE1E3A14AF0010E5EC /* Main.storyboard in Resources */,
 			);
@@ -377,6 +381,7 @@
 				6EFA14F91E3A14AF0010E5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
