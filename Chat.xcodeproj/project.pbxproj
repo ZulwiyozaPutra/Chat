@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390C345BCB0EC4A82D05C23C /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B024DCD481BD6B4857E2F0B0 /* Pods_Chat.framework */; };
+		6ED54CF21E3B1AE8005CC7BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED54CF11E3B1AE8005CC7BA /* Constants.swift */; };
 		6EEED5F01E3A17F6003C647F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEED5EF1E3A17F6003C647F /* GoogleService-Info.plist */; };
 		6EFA14E91E3A14AF0010E5EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA14E81E3A14AF0010E5EC /* AppDelegate.swift */; };
 		6EFA14EB1E3A14AF0010E5EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA14EA1E3A14AF0010E5EC /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6ED54CF11E3B1AE8005CC7BA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6EEED5EF1E3A17F6003C647F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EFA14E51E3A14AF0010E5EC /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA14E81E3A14AF0010E5EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				6EFA14E81E3A14AF0010E5EC /* AppDelegate.swift */,
 				6EFA14EA1E3A14AF0010E5EC /* ViewController.swift */,
+				6ED54CF11E3B1AE8005CC7BA /* Constants.swift */,
 				6EFA14EC1E3A14AF0010E5EC /* Main.storyboard */,
 				6EFA14EF1E3A14AF0010E5EC /* Assets.xcassets */,
 				6EFA14F11E3A14AF0010E5EC /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			files = (
 				6EFA14EB1E3A14AF0010E5EC /* ViewController.swift in Sources */,
 				6EFA14E91E3A14AF0010E5EC /* AppDelegate.swift in Sources */,
+				6ED54CF21E3B1AE8005CC7BA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
