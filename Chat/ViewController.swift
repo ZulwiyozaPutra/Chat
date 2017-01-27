@@ -18,7 +18,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var messages: [FIRDataSnapshot]! = []
     var msglength: NSNumber = 1000
     var storageRef: FIRStorageReference!
-    var remoteConfig: FIRRemoteConfig!
+    // var remoteConfig: FIRRemoteConfig!
     let imageCache = NSCache<NSString, UIImage>()
     var keyboardOnScreen = false
     var placeholderImage = UIImage(named: "ic_account_circle")
