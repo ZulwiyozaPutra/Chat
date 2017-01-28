@@ -14,7 +14,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     // MARK: Properties
     
-    var ref: FIRDatabaseReference!
+    var reference: FIRDatabaseReference!
     var messages: [FIRDataSnapshot]! = []
     var msglength: NSNumber = 1000
     var storageRef: FIRStorageReference!
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     func configureDatabase() {
-        // TODO: configure database to sync messages
+        reference = FIRDatabase.database().reference()
     }
     
     func configureStorage() {
@@ -100,6 +100,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             messageTextField.delegate = self
             
             // TODO: Set up app to send and receive messages when signed in
+            
+            configureDatabase()
         }
     }
     
@@ -111,7 +113,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Send Message
     
     func sendMessage(data: [String:String]) {
-        // TODO: create method that pushes message to the firebase database
+        var mdata = data
+        mdata[Constants.MessageFields.name] = displayName
+        reference.child("messages").childByAutoId().setValue(data)
     }
     
     func sendPhotoMessage(photoData: Data) {
