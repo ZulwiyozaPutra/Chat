@@ -61,6 +61,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     func configureDatabase() {
         reference = FIRDatabase.database().reference()
+        _refHandle = reference.child("messages").observe(.childAdded, with: { (snapshot: FIRDataSnapshot) in
+            self.messages.append(snapshot)
+            self.messagesTable.insertRows(at: [IndexPath(row: self.messages.count - 1, section: 0)], with: .automatic)
+            self.scrollToBottomMessage()
+        })
     }
     
     func configureStorage() {
@@ -68,7 +73,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     deinit {
-        // TODO: set up what needs to be deinitialized when view is no longer being used
+        reference.child("messages").removeObserver(withHandle: _refHandle)
     }
     
     // MARK: Remote Config
@@ -115,7 +120,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     func sendMessage(data: [String:String]) {
         var mdata = data
         mdata[Constants.MessageFields.name] = displayName
-        reference.child("messages").childByAutoId().setValue(data)
+        reference.child("messages").childByAutoId().setValue(mdata)
     }
     
     func sendPhotoMessage(photoData: Data) {
