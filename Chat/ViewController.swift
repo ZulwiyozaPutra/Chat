@@ -209,7 +209,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell!.imageView?.image = self.placeholderImage
         
         return cell!
-        // TODO: update cell to display message data
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
