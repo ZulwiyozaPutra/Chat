@@ -5,7 +5,7 @@ target 'Chat' do
   pod 'Firebase/Storage’
   pod 'Firebase/Core’
   pod 'Firebase/Database’
-  pod 'FirebaseUI'
+  pod 'FirebaseUI’
   pod 'Firebase/RemoteConfig'
 
 end
