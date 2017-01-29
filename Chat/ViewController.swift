@@ -94,6 +94,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     deinit {
         ref.child("messages").removeObserver(withHandle: _refHandle)
+        FIRAuth.auth()?.removeStateDidChangeListener(_authHandle)
     }
     
     // MARK: Remote Config
