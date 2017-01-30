@@ -133,7 +133,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     func loginSession() {
         let authViewController = FUIAuth.defaultAuthUI()!.authViewController()
-        self.present(authViewController, animated: true, completion: nil)
+        present(authViewController, animated: true, completion: nil)
     }
     
     // MARK: Send Message
