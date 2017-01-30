@@ -56,6 +56,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     func configureAuth() {
         
+        
+        // Configur Google Authentication UI
+        FUIAuth.defaultAuthUI()?.providers = [FUIGoogleAuth()]
+        
+        
         // listen for changes in the authorization state
         _authHandle = FIRAuth.auth()?.addStateDidChangeListener { (auth: FIRAuth, user: FIRUser?) in
             // refresh table data
